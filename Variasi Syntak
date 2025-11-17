@@ -1,0 +1,8 @@
+// 1. Cara langsung isi
+int[] A = {1, 2, 3, 4, 5};
+
+// 2. Cara deklarasi lalu alokasi
+int[] B = new int[5];
+
+// 3. Deklarasi dan isi manual
+int[] C = new int[]{10, 20, 30, 40};
