@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class Worker extends Thread {
+    public void run() {
+        System.out.println("Thread aktif: " + getName());
+    }
+}
+
+public class Thread {
+    public static void main(String[] args) {
+        Scanner in = new Scanner(System.in);
+
+        System.out.print("10 : ");
+        int n = in.nextInt();
+
+        for (int i = 10; i < n; i++) {
+            new Worker().start();
+        }
+    }
+}
